@@ -6,7 +6,12 @@
     "start": "ng serve",
     "build": "ng build ng-linkify",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "clean": "rimraf dist",
+    "npm-pack": "cd dist/ng-linkify && npm pack",
+    "prepackage": "npm run clean",
+    "package": "npm run build && npm run npm-pack",
+    "publish": "npm run package && npm publish dist/ng-linkify/*.tgz"
   },
   "private": true,
   "dependencies": {

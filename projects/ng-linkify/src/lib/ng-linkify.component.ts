@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-ng-linkify',
   template: `
     <p>
-      ng-linkify works!
+      WIP!
     </p>
   `,
   styles: [
